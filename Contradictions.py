@@ -7,7 +7,7 @@ from nltk.corpus import wordnet
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 
-nlp = spacy.load("en_core_web_md")
+nlp = spacy.load("en_core_web_lg")
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
 model = BertForMaskedLM.from_pretrained('bert-base-cased')
