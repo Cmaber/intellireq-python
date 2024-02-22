@@ -4,10 +4,10 @@ import torch
 import string
 import numpy as np
 
-nlp = spacy.load("en_core_web_md")
+nlp = spacy.load("en_core_web_lg")
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
-model = BertForMaskedLM.from_pretrained('BERT_finetuned_MLM')
+model = BertForMaskedLM.from_pretrained('bert-base-cased')
 model.eval()
 
 
