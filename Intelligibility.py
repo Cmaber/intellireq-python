@@ -2,10 +2,10 @@ import spacy
 from transformers import BertTokenizer, BertModel
 import torch
 
-nlp_spacy = spacy.load("en_core_web_md")
+nlp_spacy = spacy.load("en_core_web_lg")
 
-tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-model = BertModel.from_pretrained('BERT_finetuned_MLM')
+tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
+model = BertModel.from_pretrained('bert-base-cased')
 
 
 def get_bert_embedding(sentence):
