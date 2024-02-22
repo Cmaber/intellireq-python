@@ -10,7 +10,7 @@ lemmatizer = WordNetLemmatizer()
 nlp = spacy.load("en_core_web_md")
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
-model = BertForMaskedLM.from_pretrained('BERT_finetuned_MLM')
+model = BertForMaskedLM.from_pretrained('bert-base-cased')
 model.eval()
 
 
